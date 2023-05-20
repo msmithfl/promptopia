@@ -15,7 +15,7 @@ const PromptSchema = new Schema({
   },
 });
 
-// either get the prompt that already exists on the models objects OR
+// either get the prompt that already exists on the models object OR
 // if doesnt exist, create a new model called Prompt based on the PromptSchema
 const Prompt = models.Prompt || model("Prompt", PromptSchema);
 
